@@ -1,0 +1,58 @@
+Palindrome:
+#include<stdio.h>
+main()
+{
+int n, reverse=0,temp;
+printf("enter number");
+scanf("%d",&n);
+temp=n;
+while(temp!=0)
+{
+
+reverse=reverse*10;
+reverse=reverse+temp%10;
+temp=temp/10;
+}
+if(n==reverse)
+printf("%d is a palindrome number",n);
+else
+printf("%d is not a palindrome number",n);
+}
+prime number:
+#include<stdio.h>
+main()
+{
+int n,i;
+printf("enter the number to check");
+scanf("%d",&n);
+for(i=2;i<=n-1;i++)
+{
+if(i%n==0)
+{
+printf("%d is not primr:",n);
+break;
+}
+}
+if(i==n)
+printf(" num is priem",n);
+}
+Reverse:
+#include<stdio.h>
+main()
+{
+int i,k,j,s,t,u,w,sum;
+printf("enter the number to check");
+scanf("%d",&i);
+
+
+   k=i/10;
+   j=i%10;
+   s=k/10;
+   t=k%10;
+   u=s/10;
+   w=s%10;
+   printf("the reverse number is %d%d%d%d:\n",j,t,w,u);
+   sum=j+t+w+u;
+   printf("sum is:%d\n",sum);
+}
+
